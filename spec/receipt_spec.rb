@@ -11,7 +11,7 @@ RSpec.describe Bootpay do
     print result
     expect(result).not_to be_empty
     expect(result[:status]).to eq(200)
-    result = bootpay.verify('5c2da0c0e13f3304e788df3d')
+    result = bootpay.verify('5c638572e13f331c9e96e48c')
     print result.to_json
   end
 end

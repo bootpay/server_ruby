@@ -77,6 +77,18 @@ module Bootpay
       )
     end
 
+    def destroy_subscribe_billing_key(billing_key)
+      raise 'token 값이 비어 있습니다.' if @token.blank?
+      request(
+        :delete,
+        [api_url, 'subscribe', 'billing', "#{billing_key}.json"].join('/'),
+        {},
+        {
+          Authorization: @token
+        }
+      )
+    end
+
     def subscribe_billing(data)
       raise 'token 값이 비어 있습니다.' if @token.blank?
       raise 'billing_key 값을 입력해주세요.' if data[:billing_key].blank?
