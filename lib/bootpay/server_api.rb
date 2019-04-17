@@ -45,7 +45,7 @@ module Bootpay
       )
     end
 
-    def cancel(receipt_id, price = nil, name = '', reason = '')
+    def cancel(receipt_id, price = nil, tax_free = nil, name = '', reason = '')
       raise 'token 값이 비어 있습니다.' if @token.blank?
       request(
         :post,
@@ -53,6 +53,7 @@ module Bootpay
         {
           receipt_id: receipt_id,
           price:      price,
+          tax_free:   tax_free,
           name:       name,
           reason:     reason
         }.compact,

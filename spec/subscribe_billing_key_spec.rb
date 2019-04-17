@@ -14,14 +14,14 @@ RSpec.describe Bootpay do
     result = bootpay.get_access_token
     expect(result).not_to be_empty
     expect(result[:status]).to eq(200)
-
     result = bootpay.subscribe_billing(
-      billing_key: '5c13b268e13f332a61612f2b',
+      billing_key: "5cb3d695e13f33668ddfe068",
       item_name:   '테스트결제',
-      price:       1000,
+      price:       100,
       order_id:    Time.current.to_i
     )
-    print result.to_json
+    print result
+    # print result.to_json
     # result = bootpay.subscribe_reserve_cancel result[:data][:reserve_id]
     # print result
   end
