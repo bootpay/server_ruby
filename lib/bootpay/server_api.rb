@@ -150,6 +150,20 @@ module Bootpay
       )
     end
 
+    def naverpay_item_response(data)
+      request(
+        :post,
+        [api_url, 'npay', 'product.json'].join("/"),
+        {
+          data: data
+        },
+        {
+          content_type:  :json,
+          Authorization: @token
+        }
+      )
+    end
+
     private
 
       def request(method, url, data = {}, headers = {})
@@ -164,11 +178,10 @@ module Bootpay
         rescue RestClient::ExceptionWithResponse => e
           response = e.response
         end
-
         JSON.parse(response.body, symbolize_names: true) rescue {
           status:  500,
           code:    -100,
-          message: e.message
+          message: 'json parse failed'
         }
       end
 

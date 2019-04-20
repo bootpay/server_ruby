@@ -12,9 +12,9 @@ RSpec.describe Bootpay do
     expect(result[:status]).to eq(200)
 
     result = bootpay.cancel(
-      '5cb72c08e13f33668ddfe1e2',
-      nil,
-      nil,
+      '5cb7cbd0e13f335f42609278',
+      2000,
+      1500,
       '테스트',
       '테스트'
     )
