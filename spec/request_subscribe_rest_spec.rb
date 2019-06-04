@@ -24,6 +24,9 @@ RSpec.describe Bootpay do
         phone:    '01000000000',
         address:  '인천광역시 연수구 송도문화로 28번길 28',
         zipcode:  '222000'
+      },
+      extra:           {
+        subscribe_test_payment: 1
       }
     )
     print result

@@ -5,7 +5,7 @@ example_id                                 | status | run_time        |
 ./spec/confirm_spec.rb[1:1]                | passed | 0.18364 seconds |
 ./spec/naverpay_item_xml_spec.rb[1:1]      | passed | 0.25967 seconds |
 ./spec/receipt_spec.rb[1:1]                | passed | 0.32072 seconds |
-./spec/request_subscribe_rest_spec.rb[1:1] | passed | 0.55874 seconds |
+./spec/request_subscribe_rest_spec.rb[1:1] | passed | 0.73827 seconds |
 ./spec/subscribe_billing_key_spec.rb[1:1]  | passed | 0.45068 seconds |
 ./spec/subscribe_reserve_spec.rb[1:1]      | passed | 0.73691 seconds |
 ./spec/subscribe_spec.rb[1:1]              | passed | 2.57 seconds    |
