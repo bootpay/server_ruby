@@ -12,7 +12,7 @@ RSpec.describe Bootpay do
     expect(result[:status]).to eq(200)
 
     result = bootpay.subscribe_billing(
-      billing_key: '5b99a854e13f330555207436',
+      billing_key: '5d130a3da3935803ab34eb69',
       'item_name': '정기결제 테스트 아이템',
       'price':     3000,
       'order_id':  Time.now.to_i.to_s,
