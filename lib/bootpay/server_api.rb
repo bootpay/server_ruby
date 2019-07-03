@@ -3,6 +3,7 @@ module Bootpay
     URL = {
       development: 'https://dev-api.bootpay.co.kr',
       test:        'https://test-api.bootpay.co.kr',
+      stage:       'https://stage-api.bootpay.co.kr',
       production:  'https://api.bootpay.co.kr'
     }.freeze
 
@@ -156,6 +157,43 @@ module Bootpay
         [api_url, 'npay', 'product.json'].join("/"),
         {
           data: data
+        },
+        {
+          content_type:  :json,
+          Authorization: @token
+        }
+      )
+    end
+
+    def send_sms(receive_numbers, message, send_number = nil)
+      request(
+        :post,
+        [api_url, 'push', 'sms.json'].join('/'),
+        {
+          data: {
+            sp:  send_number,
+            rps: receive_numbers,
+            msg: message
+          }
+        },
+        {
+          content_type:  :json,
+          Authorization: @token
+        }
+      )
+    end
+
+    def send_lms(receive_numbers, message, subject, send_number = nil)
+      request(
+        :post,
+        [api_url, 'push', 'lms.json'].join('/'),
+        {
+          data: {
+            sp:  send_number,
+            rps: receive_numbers,
+            msg: message,
+            sj:  subject
+          }
         },
         {
           content_type:  :json,
