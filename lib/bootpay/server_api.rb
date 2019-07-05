@@ -165,15 +165,17 @@ module Bootpay
       )
     end
 
-    def send_sms(receive_numbers, message, send_number = nil)
+    def send_sms(receive_numbers, message, send_number = nil, extra = {})
       request(
         :post,
         [api_url, 'push', 'sms.json'].join('/'),
         {
           data: {
-            sp:  send_number,
-            rps: receive_numbers,
-            msg: message
+            sp:   send_number,
+            rps:  receive_numbers,
+            msg:  message,
+            m_id: extra[:m_id],
+            o_id: extra[:o_id]
           }
         },
         {
@@ -183,16 +185,19 @@ module Bootpay
       )
     end
 
-    def send_lms(receive_numbers, message, subject, send_number = nil)
+    def send_lms(receive_numbers, message, subject, send_number = nil, extra = {})
       request(
         :post,
         [api_url, 'push', 'lms.json'].join('/'),
         {
           data: {
-            sp:  send_number,
-            rps: receive_numbers,
-            msg: message,
-            sj:  subject
+            sp:   send_number,
+            rps:  receive_numbers,
+            msg:  message,
+            sj:   subject,
+            m_id: extra[:m_id],
+            o_id: extra[:o_id]
+
           }
         },
         {
