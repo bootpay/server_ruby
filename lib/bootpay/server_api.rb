@@ -2,7 +2,6 @@ module Bootpay
   class ServerApi
     URL = {
       development: 'https://dev-api.bootpay.co.kr',
-      ehowlsla: 'https://api-ehowlsla.bootpay.co.kr',
       test:        'https://test-api.bootpay.co.kr',
       stage:       'https://stage-api.bootpay.co.kr',
       production:  'https://api.bootpay.co.kr'

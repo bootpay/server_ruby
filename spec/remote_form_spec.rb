@@ -5,7 +5,7 @@ RSpec.describe Bootpay do
     bootpay = Bootpay::ServerApi.new(
       '5b9f51264457636ab9a07cde',
       'sfilSOSVakw+PZA+PRux4Iuwm7a//9CXXudCq9TMDHk=',
-      :ehowlsla
+      :development
     )
 
     result = bootpay.remote_form(
