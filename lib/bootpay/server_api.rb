@@ -2,6 +2,7 @@ module Bootpay
   class ServerApi
     URL = {
       development: 'https://dev-api.bootpay.co.kr',
+      ehowlsla: 'https://api-ehowlsla.bootpay.co.kr',
       test:        'https://test-api.bootpay.co.kr',
       stage:       'https://stage-api.bootpay.co.kr',
       production:  'https://api.bootpay.co.kr'
@@ -167,19 +168,19 @@ module Bootpay
 
     def remote_form(remote_form, sms_payload = nil)
       raise 'application_id 값이 비어 있습니다.' if @application_id.blank?
-      raise 'remote_form 값이 비어 있습니다.' if data[:remote_form].blank?
+      raise 'remote_form 값이 비어 있습니다.' if remote_form.blank?
       request(
           :post,
-          [api_url, 'app', 'rest', 'remote_form.json'].join('/'),
+          [api_url, 'app', 'rest', 'remote_form'].join('/'),
           {
               application_id: @application_id,
-              remote: remote_form,
+              remote_form: remote_form,
               sms_payload: sms_payload
           },
-          {
-              content_type:  :json,
-              Authorization: @token
-          }
+          # {
+          #     content_type:  :json,
+          #     Authorization: @token
+          # }
       )
     end
 
