@@ -33,6 +33,19 @@ module Bootpay
       result
     end
 
+    def get_samsung_access_token
+      result = request(
+        :post,
+        [api_url, 'samsung', 'request', 'token.json'].join('/'),
+        {
+          application_id: @application_id,
+          private_key:    @private_key
+        }
+      )
+      @token = result[:data][:token] if result[:status] == 200
+      result
+    end
+
     def verify(receipt_id)
       raise 'receipt_id 값이 비어있습니다.' if receipt_id.nil?
       raise 'token 값이 비어 있습니다.' if @token.blank?
@@ -55,8 +68,8 @@ module Bootpay
           receipt_id: receipt_id,
           price:      price,
           tax_free:   tax_free,
-          name:       name,
-          reason:     reason
+          name:       name.presence || '사용자',
+          reason:     reason.presence || '사용자취소'
         }.compact,
         {
           Authorization: @token
@@ -197,11 +210,50 @@ module Bootpay
             sj:   subject,
             m_id: extra[:m_id],
             o_id: extra[:o_id]
-
           }
         },
         {
           content_type:  :json,
+          Authorization: @token
+        }
+      )
+    end
+
+    def request_samsung_chatbotpay(request)
+      request(
+        :post,
+        [api_url, 'samsung', 'request', 'chatbotpay.json'].join('/'),
+        request,
+        {
+          content_type:  :json,
+          Authorization: @token
+        }
+      )
+    end
+
+    def samsung_cancel(receipt_id, price = nil, tax_free = nil, name = '', reason = '')
+      request(
+        :post,
+        [api_url, 'samsung', 'cancel.json'].join('/'),
+        {
+          receipt_id: receipt_id,
+          price:      price,
+          tax_free:   tax_free,
+          name:       name.presence || '시스템',
+          reason:     reason.presence || '사용자 취소'
+        }.compact,
+        {
+          Authorization: @token
+        }
+      )
+    end
+
+    def certificate(receipt_id)
+      request(
+        :post,
+        [api_url, 'certificate.json'].join('/'),
+        { receipt_id: receipt_id },
+        {
           Authorization: @token
         }
       )
