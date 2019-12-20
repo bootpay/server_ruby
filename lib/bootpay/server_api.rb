@@ -270,6 +270,7 @@ module Bootpay
       request(
         :get,
         [api_url, 'certificate', receipt_id].join('/'),
+        {},
         {
           Authorization: @token
         }
