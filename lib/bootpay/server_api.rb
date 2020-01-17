@@ -7,6 +7,7 @@ module Bootpay
     include Bootpay::Extend::Common
     include Bootpay::Extend::Message
     include Bootpay::Extend::Naverpay
+    include Bootpay::Extend::Reseller
     include Bootpay::Extend::Samsung
     include Bootpay::Extend::Token
     include Bootpay::Extend::Verification
