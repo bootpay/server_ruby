@@ -1,10 +1,4 @@
-require 'bootpay/extend/billing'
-require 'bootpay/extend/common'
-require 'bootpay/extend/message'
-require 'bootpay/extend/naverpay'
-require 'bootpay/extend/samsung'
-require 'bootpay/extend/token'
-require 'bootpay/extend/verification'
+Gem.find_files("bootpay/extend/*.rb").each { |path| require path }
 
 module Bootpay
   class ServerApi

@@ -7,7 +7,7 @@ example_id                                 | status | run_time        |
 ./spec/get_samsung_chatbotpay_spec.rb[1:1] | passed | 1.59 seconds    |
 ./spec/lms_spec.rb[1:1]                    | passed | 0.99263 seconds |
 ./spec/naverpay_item_xml_spec.rb[1:1]      | passed | 0.25967 seconds |
-./spec/receipt_spec.rb[1:1]                | passed | 0.19397 seconds |
+./spec/receipt_spec.rb[1:1]                | passed | 0.4931 seconds  |
 ./spec/request_subscribe_rest_spec.rb[1:1] | passed | 1.22 seconds    |
 ./spec/sms_spec.rb[1:1]                    | passed | 0.27484 seconds |
 ./spec/subscribe_billing_key_spec.rb[1:1]  | passed | 0.22041 seconds |
