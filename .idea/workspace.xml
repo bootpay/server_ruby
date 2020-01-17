@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe7f6219-3e4e-4136-b867-ac96c25d6909" name="Default" comment="코드 정리 및 0.1.2 릴리즈 준비중">
+      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/server_ruby.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/billing.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/common.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/message.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/naverpay.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/samsung.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/token.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bootpay/extend/verification.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/get_samsung_chatbotpay_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.rspec_status" beforeDir="false" afterPath="$PROJECT_DIR$/.rspec_status" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lms_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lms_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/sms_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/sms_spec.rb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__receipt_spec___server_ruby.rcov" NAME="Run spec 'receipt_spec': server_ruby Coverage Results" MODIFIED="1553240672806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__confirm_spec___server_ruby.rcov" NAME="Run spec 'confirm_spec': server_ruby Coverage Results" MODIFIED="1553240659050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__request_subscribe_rest_spec___server_ruby.rcov" NAME="Run spec 'request_subscribe_rest_spec': server_ruby Coverage Results" MODIFIED="1554259258436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__subscribe_spec___server_ruby.rcov" NAME="Run spec 'subscribe_spec': server_ruby Coverage Results" MODIFIED="1536815037862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__subscribe_reserve_spec___server_ruby.rcov" NAME="Run spec 'subscribe_reserve_spec': server_ruby Coverage Results" MODIFIED="1544422917370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__access_token_spec___server_ruby.rcov" NAME="Run spec 'access_token_spec': server_ruby Coverage Results" MODIFIED="1527569985200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__cancel_spec___server_ruby.rcov" NAME="Run spec 'cancel_spec': server_ruby Coverage Results" MODIFIED="1548820538684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__subscribe_billing_key_spec___server_ruby.rcov" NAME="Run spec 'subscribe_billing_key_spec': server_ruby Coverage Results" MODIFIED="1554478799576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="415967" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="474747" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="D2D4D5" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1P2aAQy61xVTwuYVdqvHbenqZBq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RunManager" selected="RSpec.certificate_spec">
+    <configuration name="Run spec 'subscribe_billing_key_spec': server_ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="server_ruby" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/subscribe_billing_key_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="certificate_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="server_ruby" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/certificate_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_samsung_chatbotpay_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="server_ruby" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/get_samsung_chatbotpay_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="receipt_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="server_ruby" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/receipt_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sms_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="server_ruby" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/sms_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="RSpec.Run spec 'subscribe_billing_key_spec': server_ruby" />
+      <item itemvalue="RSpec.receipt_spec" />
+      <item itemvalue="RSpec.certificate_spec" />
+      <item itemvalue="RSpec.get_samsung_chatbotpay_spec" />
+      <item itemvalue="RSpec.sms_spec" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="RSpec.certificate_spec" />
+        <item itemvalue="RSpec.sms_spec" />
+        <item itemvalue="RSpec.receipt_spec" />
+        <item itemvalue="RSpec.get_samsung_chatbotpay_spec" />
+        <item itemvalue="RSpec.Run spec 'subscribe_billing_key_spec': server_ruby" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe7f6219-3e4e-4136-b867-ac96c25d6909" name="Default" comment="" />
+      <created>1527512506161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527512506161</updated>
+      <workItem from="1527512507708" duration="675000" />
+      <workItem from="1527513200093" duration="215000" />
+      <workItem from="1527513474066" duration="31000" />
+      <workItem from="1527513531309" duration="1212000" />
+      <workItem from="1527549523311" duration="3306000" />
+      <workItem from="1527569605465" duration="150000" />
+      <workItem from="1527569954934" duration="1886000" />
+      <workItem from="1527592779041" duration="534000" />
+      <workItem from="1527637273203" duration="103000" />
+      <workItem from="1527639655390" duration="9000" />
+      <workItem from="1527734784488" duration="1371000" />
+      <workItem from="1529583410036" duration="63000" />
+      <workItem from="1529641773766" duration="1236000" />
+      <workItem from="1529974516961" duration="1278000" />
+      <workItem from="1530059071709" duration="575000" />
+      <workItem from="1530059679386" duration="2370000" />
+      <workItem from="1530077680632" duration="1597000" />
+      <workItem from="1530086488766" duration="2000" />
+      <workItem from="1530088854101" duration="2819000" />
+      <workItem from="1530106147597" duration="806000" />
+      <workItem from="1536734651800" duration="2160000" />
+      <workItem from="1536796780934" duration="3626000" />
+      <workItem from="1536830906988" duration="394000" />
+      <workItem from="1536881946802" duration="1333000" />
+      <workItem from="1540798897633" duration="950000" />
+      <workItem from="1540993292651" duration="214000" />
+      <workItem from="1541480081029" duration="17000" />
+      <workItem from="1541487887987" duration="8000" />
+      <workItem from="1544170497247" duration="656000" />
+      <workItem from="1544422769350" duration="1485000" />
+      <workItem from="1544487539588" duration="336000" />
+      <workItem from="1544684148145" duration="1682000" />
+      <workItem from="1544748380463" duration="8087000" />
+      <workItem from="1544785729023" duration="147000" />
+      <workItem from="1544794154897" duration="697000" />
+      <workItem from="1545027985644" duration="199000" />
+      <workItem from="1545036451400" duration="13000" />
+      <workItem from="1546491713707" duration="23000" />
+      <workItem from="1546493970765" duration="1106000" />
+      <workItem from="1546520648200" duration="469000" />
+      <workItem from="1546559230940" duration="1756000" />
+      <workItem from="1546587972024" duration="283000" />
+      <workItem from="1547605336830" duration="33000" />
+      <workItem from="1547614442064" duration="4182000" />
+      <workItem from="1547654258882" duration="3000" />
+      <workItem from="1548140703155" duration="23000" />
+      <workItem from="1548141113137" duration="356000" />
+      <workItem from="1548202441823" duration="773000" />
+      <workItem from="1548749343054" duration="1356000" />
+      <workItem from="1548762348639" duration="20000" />
+      <workItem from="1548820030047" duration="1044000" />
+      <workItem from="1548918597030" duration="28000" />
+      <workItem from="1550025953657" duration="205000" />
+      <workItem from="1550326731130" duration="1102000" />
+      <workItem from="1550449995058" duration="658000" />
+      <workItem from="1550477135257" duration="448000" />
+      <workItem from="1550497720294" duration="20000" />
+      <workItem from="1552964763990" duration="4402000" />
+      <workItem from="1552986726684" duration="339000" />
+      <workItem from="1553001860279" duration="1000" />
+      <workItem from="1553240619002" duration="151000" />
+      <workItem from="1554183562056" duration="1681000" />
+      <workItem from="1554258704314" duration="567000" />
+      <workItem from="1554363201722" duration="1584000" />
+      <workItem from="1554374739163" duration="1000" />
+      <workItem from="1554383604276" duration="3421000" />
+      <workItem from="1554419899005" duration="2550000" />
+      <workItem from="1554478692940" duration="482000" />
+      <workItem from="1554703499498" duration="3000" />
+      <workItem from="1555288157540" duration="3455000" />
+      <workItem from="1555395344607" duration="1464000" />
+      <workItem from="1555419236201" duration="614000" />
+      <workItem from="1555466035613" duration="1845000" />
+      <workItem from="1555491803738" duration="1899000" />
+      <workItem from="1555498553671" duration="1591000" />
+      <workItem from="1555544831427" duration="1897000" />
+      <workItem from="1555553019885" duration="544000" />
+      <workItem from="1555686242669" duration="696000" />
+      <workItem from="1555735517034" duration="5600000" />
+      <workItem from="1555809663322" duration="1699000" />
+      <workItem from="1555834761010" duration="407000" />
+      <workItem from="1555845104222" duration="68000" />
+      <workItem from="1555850240910" duration="536000" />
+      <workItem from="1555893808697" duration="10000" />
+      <workItem from="1555893965151" duration="33000" />
+      <workItem from="1556755898231" duration="1356000" />
+      <workItem from="1556768852442" duration="1720000" />
+      <workItem from="1556840798087" duration="23000" />
+      <workItem from="1556841621732" duration="502000" />
+      <workItem from="1556860763777" duration="1273000" />
+      <workItem from="1557041337956" duration="177000" />
+      <workItem from="1557367039305" duration="705000" />
+      <workItem from="1557716054071" duration="166000" />
+      <workItem from="1557728527910" duration="792000" />
+      <workItem from="1557903359438" duration="1322000" />
+      <workItem from="1558345710310" duration="55000" />
+      <workItem from="1558492834671" duration="95000" />
+      <workItem from="1558518520555" duration="2473000" />
+      <workItem from="1559628838687" duration="4382000" />
+      <workItem from="1559692060357" duration="888000" />
+      <workItem from="1561528465373" duration="628000" />
+      <workItem from="1561541997836" duration="228000" />
+      <workItem from="1561622248279" duration="686000" />
+      <workItem from="1562126912704" duration="4915000" />
+      <workItem from="1562148255955" duration="928000" />
+      <workItem from="1562198263289" duration="1975000" />
+      <workItem from="1562292721064" duration="1080000" />
+      <workItem from="1562295439188" duration="536000" />
+      <workItem from="1562298784992" duration="585000" />
+      <workItem from="1562313538072" duration="3958000" />
+      <workItem from="1562381536440" duration="18000" />
+      <workItem from="1562553990121" duration="771000" />
+      <workItem from="1562574504765" duration="31000" />
+      <workItem from="1562722423557" duration="1806000" />
+      <workItem from="1562802246035" duration="595000" />
+      <workItem from="1562810898968" duration="587000" />
+      <workItem from="1562826701295" duration="328000" />
+      <workItem from="1562846545210" duration="845000" />
+      <workItem from="1562854505720" duration="548000" />
+      <workItem from="1562889870884" duration="454000" />
+      <workItem from="1563151107526" duration="13000" />
+      <workItem from="1563245752588" duration="163000" />
+      <workItem from="1563421966423" duration="2346000" />
+      <workItem from="1563433282229" duration="585000" />
+      <workItem from="1563492090209" duration="1654000" />
+      <workItem from="1564373797304" duration="21000" />
+      <workItem from="1564374374667" duration="148000" />
+      <workItem from="1565074502327" duration="625000" />
+      <workItem from="1565092569361" duration="372000" />
+      <workItem from="1565938900053" duration="1093000" />
+      <workItem from="1566288050812" duration="2568000" />
+      <workItem from="1566301221160" duration="74000" />
+      <workItem from="1566302243332" duration="414000" />
+      <workItem from="1566343774229" duration="573000" />
+      <workItem from="1566459551627" duration="676000" />
+      <workItem from="1566462470997" duration="946000" />
+      <workItem from="1566518156664" duration="1771000" />
+      <workItem from="1567057170285" duration="1120000" />
+      <workItem from="1568814991093" duration="301000" />
+      <workItem from="1569569999983" duration="1065000" />
+      <workItem from="1569626916742" duration="436000" />
+      <workItem from="1569800925401" duration="20000" />
+      <workItem from="1570696425205" duration="34000" />
+      <workItem from="1571032834529" duration="576000" />
+      <workItem from="1571125672135" duration="2163000" />
+      <workItem from="1571183506101" duration="2000" />
+      <workItem from="1572253715855" duration="851000" />
+      <workItem from="1572305593934" duration="113000" />
+      <workItem from="1573013836139" duration="1664000" />
+      <workItem from="1573084382795" duration="2477000" />
+      <workItem from="1573171942765" duration="950000" />
+      <workItem from="1573208184587" duration="236000" />
+      <workItem from="1573446768754" duration="7271000" />
+      <workItem from="1573516905507" duration="95000" />
+      <workItem from="1573539397073" duration="3719000" />
+      <workItem from="1573602867279" duration="4810000" />
+      <workItem from="1573688748354" duration="1111000" />
+      <workItem from="1573698016699" duration="3869000" />
+      <workItem from="1573728154227" duration="2004000" />
+      <workItem from="1573777354647" duration="2000" />
+      <workItem from="1574053237337" duration="104000" />
+      <workItem from="1574057331612" duration="2468000" />
+      <workItem from="1574121000030" duration="2359000" />
+      <workItem from="1574207725559" duration="2412000" />
+      <workItem from="1574294246537" duration="936000" />
+      <workItem from="1574333398847" duration="6000" />
+      <workItem from="1574385304616" duration="1840000" />
+      <workItem from="1574395092263" duration="4465000" />
+      <workItem from="1574422060402" duration="4000" />
+      <workItem from="1574663325465" duration="684000" />
+      <workItem from="1574725997763" duration="4866000" />
+      <workItem from="1574814598468" duration="48000" />
+      <workItem from="1574831808658" duration="3049000" />
+      <workItem from="1574862087406" duration="15000" />
+      <workItem from="1574900180012" duration="503000" />
+      <workItem from="1574930081373" duration="857000" />
+      <workItem from="1574942951264" duration="253000" />
+      <workItem from="1574949097712" duration="359000" />
+      <workItem from="1574984894824" duration="884000" />
+      <workItem from="1574987486663" duration="144000" />
+      <workItem from="1574987644221" duration="475000" />
+      <workItem from="1574992381194" duration="756000" />
+      <workItem from="1575018369916" duration="445000" />
+      <workItem from="1575021796728" duration="774000" />
+      <workItem from="1575023052538" duration="1009000" />
+      <workItem from="1575036836582" duration="597000" />
+      <workItem from="1575334643726" duration="3000" />
+      <workItem from="1575357560545" duration="1584000" />
+      <workItem from="1575467250789" duration="182000" />
+      <workItem from="1575503458861" duration="182000" />
+      <workItem from="1575508963603" duration="4537000" />
+      <workItem from="1575554488478" duration="189000" />
+      <workItem from="1575560926976" duration="11000" />
+      <workItem from="1575637783057" duration="1102000" />
+      <workItem from="1576023680879" duration="1964000" />
+      <workItem from="1576071897996" duration="597000" />
+      <workItem from="1576108819862" duration="5864000" />
+      <workItem from="1576139175852" duration="2240000" />
+      <workItem from="1576194907695" duration="550000" />
+      <workItem from="1576197930462" duration="8088000" />
+      <workItem from="1576282113452" duration="595000" />
+      <workItem from="1576289777859" duration="33000" />
+      <workItem from="1576413958288" duration="3428000" />
+      <workItem from="1576456128233" duration="3861000" />
+      <workItem from="1576539793895" duration="1137000" />
+      <workItem from="1576565415606" duration="300000" />
+      <workItem from="1576588028313" duration="254000" />
+      <workItem from="1576627268714" duration="376000" />
+      <workItem from="1576645549709" duration="483000" />
+      <workItem from="1576652673962" duration="901000" />
+      <workItem from="1576719073579" duration="947000" />
+      <workItem from="1576720271967" duration="1263000" />
+      <workItem from="1576735574372" duration="509000" />
+      <workItem from="1576815327810" duration="116000" />
+      <workItem from="1576819720271" duration="1706000" />
+      <workItem from="1577057465172" duration="292000" />
+      <workItem from="1577063636333" duration="597000" />
+      <workItem from="1577071357811" duration="596000" />
+      <workItem from="1577085325664" duration="23000" />
+      <workItem from="1577194044600" duration="830000" />
+      <workItem from="1577318319841" duration="598000" />
+      <workItem from="1577403936796" duration="598000" />
+      <workItem from="1577425201335" duration="195000" />
+      <workItem from="1577430332586" duration="604000" />
+      <workItem from="1577545718602" duration="4000" />
+      <workItem from="1577752144574" duration="1198000" />
+      <workItem from="1577797710664" duration="538000" />
+      <workItem from="1577923040888" duration="196000" />
+      <workItem from="1578009653913" duration="371000" />
+      <workItem from="1578327703806" duration="186000" />
+      <workItem from="1578355322480" duration="554000" />
+      <workItem from="1578369667644" duration="598000" />
+      <workItem from="1578381244104" duration="2000" />
+      <workItem from="1579047968170" duration="569000" />
+      <workItem from="1579051091580" duration="1641000" />
+      <workItem from="1579076571184" duration="593000" />
+      <workItem from="1579081277101" duration="585000" />
+      <workItem from="1579093885086" duration="597000" />
+      <workItem from="1579133304645" duration="597000" />
+      <workItem from="1579172267672" duration="554000" />
+      <workItem from="1579218313811" duration="2219000" />
+    </task>
+    <task id="LOCAL-00001" summary="test code 추가">
+      <created>1527513383174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527513383174</updated>
+    </task>
+    <task id="LOCAL-00002" summary="access token 형태로 변경">
+      <created>1527514649476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527514649476</updated>
+    </task>
+    <task id="LOCAL-00003" summary="subscribe billing 추가">
+      <created>1527552758738</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527552758738</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gem 이름 변경&#10;취소 로직 좀 더 detail 하게 변경">
+      <created>1527600757441</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527600757441</updated>
+    </task>
+    <task id="LOCAL-00005" summary="정기 결제 예약 기능 추가">
+      <created>1530074024444</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530074024444</updated>
+    </task>
+    <task id="LOCAL-00006" summary="스케쥴 예약 취소 로직 추가">
+      <created>1530103621350</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530103621350</updated>
+    </task>
+    <task id="LOCAL-00007" summary="버그 수정">
+      <created>1540798921663</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1540798921663</updated>
+    </task>
+    <task id="LOCAL-00008" summary="버그 수정">
+      <created>1540799050929</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799050929</updated>
+    </task>
+    <task id="LOCAL-00009" summary="버그 수정">
+      <created>1540799256537</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799256537</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gemfile 이름 변경">
+      <created>1540799507450</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799507450</updated>
+    </task>
+    <task id="LOCAL-00011" summary="gemfile 이름 변경">
+      <created>1540799585267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799585267</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gemfile 이름 변경">
+      <created>1540799769597</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799769597</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gemfile 이름 변경">
+      <created>1540799833931</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799833931</updated>
+    </task>
+    <task id="LOCAL-00014" summary="테스트 코드 추가">
+      <created>1544778793681</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544778793681</updated>
+    </task>
+    <task id="LOCAL-00015" summary="billing_key 예제 업데이트">
+      <created>1544785768746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544785768746</updated>
+    </task>
+    <task id="LOCAL-00016" summary="activesupport 4.2.0이상으로 변경">
+      <created>1546491732797</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1546491732798</updated>
+    </task>
+    <task id="LOCAL-00017" summary="server side에서 결제 승인하는 로직 추가">
+      <created>1546520875239</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1546520875239</updated>
+    </task>
+    <task id="LOCAL-00018" summary="업데이트 준비중">
+      <created>1547614877809</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547614877809</updated>
+    </task>
+    <task id="LOCAL-00019" summary="카드 정기 결제 REST API 요청 추가">
+      <created>1547615628685</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1547615628685</updated>
+    </task>
+    <task id="LOCAL-00020" summary="subscribe billing key destroy 기능 추가">
+      <created>1552975165561</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1552975165561</updated>
+    </task>
+    <task id="LOCAL-00021" summary="tax_free 취소 기능 추가">
+      <created>1555508533138</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1555508533138</updated>
+    </task>
+    <task id="LOCAL-00022" summary="네이버페이 item response xml">
+      <created>1555746772102</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1555746772102</updated>
+    </task>
+    <task id="LOCAL-00023" summary="네이버페이 취소 테스트 코드 추가">
+      <created>1557041414644</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1557041414644</updated>
+    </task>
+    <task id="LOCAL-00024" summary="subscribe test payment 기능 추가">
+      <created>1559632391098</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1559632391099</updated>
+    </task>
+    <task id="LOCAL-00025" summary="테스트 결제 기능">
+      <created>1561529001687</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1561529001687</updated>
+    </task>
+    <task id="LOCAL-00026" summary="sms, lms 발송 기능 추가">
+      <created>1562139165685</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562139165685</updated>
+    </task>
+    <task id="LOCAL-00027" summary="sms, lms 추가 정보 보내도록 설정">
+      <created>1562337287672</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1562337287672</updated>
+    </task>
+    <task id="LOCAL-00028" summary="본인인증 확인 REST API 추가">
+      <created>1576719769137</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1576719769137</updated>
+    </task>
+    <task id="LOCAL-00029" summary="0.1.1 버전 배포">
+      <created>1576719919335</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1576719919335</updated>
+    </task>
+    <task id="LOCAL-00030" summary="rspec 업데이트">
+      <created>1576720009305</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1576720009305</updated>
+    </task>
+    <task id="LOCAL-00031" summary="certificate GET 으로 변경">
+      <created>1576822192539</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1576822192539</updated>
+    </task>
+    <task id="LOCAL-00032" summary="버그 수정">
+      <created>1576823759859</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1576823759859</updated>
+    </task>
+    <task id="LOCAL-00033" summary="코드 정리 및 0.1.2 릴리즈 준비중">
+      <created>1579223319199</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1579223319199</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="subscribe billing 추가" />
+    <MESSAGE value="gem 이름 변경&#10;취소 로직 좀 더 detail 하게 변경" />
+    <MESSAGE value="정기 결제 예약 기능 추가" />
+    <MESSAGE value="스케쥴 예약 취소 로직 추가" />
+    <MESSAGE value="gemfile 이름 변경" />
+    <MESSAGE value="테스트 코드 추가" />
+    <MESSAGE value="billing_key 예제 업데이트" />
+    <MESSAGE value="activesupport 4.2.0이상으로 변경" />
+    <MESSAGE value="server side에서 결제 승인하는 로직 추가" />
+    <MESSAGE value="업데이트 준비중" />
+    <MESSAGE value="카드 정기 결제 REST API 요청 추가" />
+    <MESSAGE value="subscribe billing key destroy 기능 추가" />
+    <MESSAGE value="tax_free 취소 기능 추가" />
+    <MESSAGE value="네이버페이 item response xml" />
+    <MESSAGE value="네이버페이 취소 테스트 코드 추가" />
+    <MESSAGE value="subscribe test payment 기능 추가" />
+    <MESSAGE value="테스트 결제 기능" />
+    <MESSAGE value="sms, lms 발송 기능 추가" />
+    <MESSAGE value="sms, lms 추가 정보 보내도록 설정" />
+    <MESSAGE value="본인인증 확인 REST API 추가" />
+    <MESSAGE value="0.1.1 버전 배포" />
+    <MESSAGE value="rspec 업데이트" />
+    <MESSAGE value="certificate GET 으로 변경" />
+    <MESSAGE value="버그 수정" />
+    <MESSAGE value="코드 정리 및 0.1.2 릴리즈 준비중" />
+    <option name="LAST_COMMIT_MESSAGE" value="코드 정리 및 0.1.2 릴리즈 준비중" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3272" y="322" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577923050639">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3272" y="322" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1577923050639" />
+    <state x="3157" y="101" key="CommitChangelistDialog2" timestamp="1579223661864">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3157" y="101" key="CommitChangelistDialog2/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1576823759751" />
+    <state x="3157" y="101" key="CommitChangelistDialog2/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223661864" />
+    <state width="2006" height="431" key="GridCell.Tab.0.bottom" timestamp="1579223658825">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576233928706" />
+    <state width="2518" height="564" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@0.23.2560.1417" timestamp="1576588055949" />
+    <state width="2006" height="431" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1578330526796" />
+    <state width="2006" height="431" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223658825" />
+    <state width="1876" height="384" key="GridCell.Tab.0.bottom/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@0.23.2560.1417" timestamp="1575000866681" />
+    <state width="1878" height="384" key="GridCell.Tab.0.bottom/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@2560.23.1920.1057" timestamp="1576226886959" />
+    <state width="2006" height="431" key="GridCell.Tab.0.bottom/2560.23.2048.1129/0.23.2560.1417/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579076555977" />
+    <state width="2006" height="431" key="GridCell.Tab.0.center" timestamp="1579223658824">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576233928706" />
+    <state width="2518" height="564" key="GridCell.Tab.0.center/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@0.23.2560.1417" timestamp="1576588055949" />
+    <state width="2006" height="431" key="GridCell.Tab.0.center/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1578330526795" />
+    <state width="2006" height="431" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223658824" />
+    <state width="1876" height="384" key="GridCell.Tab.0.center/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@0.23.2560.1417" timestamp="1575000866680" />
+    <state width="1878" height="384" key="GridCell.Tab.0.center/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@2560.23.1920.1057" timestamp="1576226886958" />
+    <state width="2006" height="431" key="GridCell.Tab.0.center/2560.23.2048.1129/0.23.2560.1417/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579076555976" />
+    <state width="2006" height="431" key="GridCell.Tab.0.left" timestamp="1579223658824">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576233928706" />
+    <state width="2518" height="564" key="GridCell.Tab.0.left/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@0.23.2560.1417" timestamp="1576588055948" />
+    <state width="2006" height="431" key="GridCell.Tab.0.left/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1578330526795" />
+    <state width="2006" height="431" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223658824" />
+    <state width="1876" height="384" key="GridCell.Tab.0.left/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@0.23.2560.1417" timestamp="1575000866680" />
+    <state width="1878" height="384" key="GridCell.Tab.0.left/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@2560.23.1920.1057" timestamp="1576226886958" />
+    <state width="2006" height="431" key="GridCell.Tab.0.left/2560.23.2048.1129/0.23.2560.1417/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579076555976" />
+    <state width="2006" height="431" key="GridCell.Tab.0.right" timestamp="1579223658825">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576233928706" />
+    <state width="2518" height="564" key="GridCell.Tab.0.right/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@0.23.2560.1417" timestamp="1576588055949" />
+    <state width="2006" height="431" key="GridCell.Tab.0.right/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1578330526796" />
+    <state width="2006" height="431" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223658825" />
+    <state width="1876" height="384" key="GridCell.Tab.0.right/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@0.23.2560.1417" timestamp="1575000866681" />
+    <state width="1878" height="384" key="GridCell.Tab.0.right/2560.23.1920.1057/0.23.2560.1417/-1680.23.1680.1027@2560.23.1920.1057" timestamp="1576226886959" />
+    <state width="2006" height="431" key="GridCell.Tab.0.right/2560.23.2048.1129/0.23.2560.1417/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579076555977" />
+    <state x="3292" y="301" key="MultipleFileMergeDialog" timestamp="1576719791313">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3292" y="301" key="MultipleFileMergeDialog/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1576719791313" />
+    <state x="3319" y="220" key="RollbackChangesDialog" timestamp="1579223557452">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3319" y="220" key="RollbackChangesDialog/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223557452" />
+    <state x="1157" y="254" key="SettingsEditor" timestamp="1576732539762">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1157" y="254" key="SettingsEditor/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1576732539762" />
+    <state x="3184" y="323" key="Vcs.Push.Dialog.v2" timestamp="1579223320589">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3184" y="323" key="Vcs.Push.Dialog.v2/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1576823760394" />
+    <state x="3184" y="323" key="Vcs.Push.Dialog.v2/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223320589" />
+    <state x="3370" y="506" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576719784762">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3370" y="506" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/-1680.23.1680.1027/2560.23.2048.1129@2560.23.2048.1129" timestamp="1576719784762" />
+    <state x="3246" y="328" width="676" height="518" key="find.popup" timestamp="1579223220165">
+      <screen x="2560" y="23" width="2048" height="1129" />
+    </state>
+    <state x="3246" y="328" width="676" height="518" key="find.popup/0.23.2560.1417/2560.23.2048.1129/-2048.23.2048.1257@2560.23.2048.1129" timestamp="1579223220165" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/server_ruby@test_spec.rcov" NAME="test_spec Coverage Results" MODIFIED="1574832314694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__cancel_spec___server_ruby.rcov" NAME="Run spec 'cancel_spec': server_ruby Coverage Results" MODIFIED="1558520692812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@cancel_spec.rcov" NAME="cancel_spec Coverage Results" MODIFIED="1576462346541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__subscribe_billing_key_spec___server_ruby.rcov" NAME="Run spec 'subscribe_billing_key_spec': server_ruby Coverage Results" MODIFIED="1576463422674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@get_samsung_chatbotpay_spec.rcov" NAME="get_samsung_chatbotpay_spec Coverage Results" MODIFIED="1577194299107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@access_token_spec.rcov" NAME="access_token_spec Coverage Results" MODIFIED="1566459624274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__sms_spec___server_ruby.rcov" NAME="Run spec 'sms_spec': server_ruby Coverage Results" MODIFIED="1563424674080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__subscribe_reserve_spec___server_ruby.rcov" NAME="Run spec 'subscribe_reserve_spec': server_ruby Coverage Results" MODIFIED="1556756595490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@get_shortcut_url_spec.rcov" NAME="get_shortcut_url_spec Coverage Results" MODIFIED="1573545513852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@sms_spec.rcov" NAME="sms_spec Coverage Results" MODIFIED="1579071894954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@certificate_spec.rcov" NAME="certificate_spec Coverage Results" MODIFIED="1579223654005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@subscribe_spec.rcov" NAME="subscribe_spec Coverage Results" MODIFIED="1576140918229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__subscribe_spec___server_ruby.rcov" NAME="Run spec 'subscribe_spec': server_ruby Coverage Results" MODIFIED="1561622334289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__request_subscribe_rest_spec___server_ruby.rcov" NAME="Run spec 'request_subscribe_rest_spec': server_ruby Coverage Results" MODIFIED="1576419022371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@receipt_spec.rcov" NAME="receipt_spec Coverage Results" MODIFIED="1578327740061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__naverpay_item_xml_spec___server_ruby.rcov" NAME="Run spec 'naverpay_item_xml_spec': server_ruby Coverage Results" MODIFIED="1555812225764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__confirm_spec___server_ruby.rcov" NAME="Run spec 'confirm_spec': server_ruby Coverage Results" MODIFIED="1563245765481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__lms_spec___server_ruby.rcov" NAME="Run spec 'lms_spec': server_ruby Coverage Results" MODIFIED="1562574506291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+    <SUITE FILE_PATH="coverage/server_ruby@Run_spec__receipt_spec___server_ruby.rcov" NAME="Run spec 'receipt_spec': server_ruby Coverage Results" MODIFIED="1567057982633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_ruby" />
+  </component>
+</project>

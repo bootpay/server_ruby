@@ -11,7 +11,7 @@ RSpec.describe Bootpay do
     expect(result).not_to be_empty
     expect(result[:status]).to eq(200)
 
-    result = bootpay.send_sms(['01095735114', '01040334678'], '테스트 메세지입니다', '01040334678')
+    result = bootpay.send_sms(['%', '%'], '테스트 메세지입니다', '%')
     print result
   end
 end
