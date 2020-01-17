@@ -1,3 +1,6 @@
+require 'rest-client'
+require 'active_support/all'
+require 'rack'
 Gem.find_files("bootpay/extend/*.rb").each { |path| require path }
 
 module Bootpay
