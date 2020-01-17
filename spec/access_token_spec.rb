@@ -8,7 +8,7 @@ RSpec.describe Bootpay do
         :development
     )
     result = bootpay.get_access_token
-    ㅔ
+
     expect(result).not_to be_empty
     expect(result[:status]).to eq(200)
   end
