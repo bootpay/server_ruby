@@ -2,14 +2,14 @@ example_id                                 | status | run_time        |
 ------------------------------------------ | ------ | --------------- |
 ./spec/access_token_spec.rb[1:1]           | passed | 0.10866 seconds |
 ./spec/cancel_spec.rb[1:1]                 | passed | 0.91447 seconds |
-./spec/certificate_spec.rb[1:1]            | passed | 1.48 seconds    |
+./spec/certificate_spec.rb[1:1]            | passed | 0.30188 seconds |
 ./spec/confirm_spec.rb[1:1]                | passed | 0.18364 seconds |
-./spec/get_samsung_chatbotpay_spec.rb[1:1] | passed | 0.49909 seconds |
+./spec/get_samsung_chatbotpay_spec.rb[1:1] | passed | 1.59 seconds    |
 ./spec/lms_spec.rb[1:1]                    | passed | 0.99263 seconds |
 ./spec/naverpay_item_xml_spec.rb[1:1]      | passed | 0.25967 seconds |
-./spec/receipt_spec.rb[1:1]                | passed | 0.27815 seconds |
+./spec/receipt_spec.rb[1:1]                | passed | 0.19397 seconds |
 ./spec/request_subscribe_rest_spec.rb[1:1] | passed | 1.22 seconds    |
-./spec/sms_spec.rb[1:1]                    | passed | 1.11 seconds    |
+./spec/sms_spec.rb[1:1]                    | passed | 0.27484 seconds |
 ./spec/subscribe_billing_key_spec.rb[1:1]  | passed | 0.22041 seconds |
 ./spec/subscribe_reserve_spec.rb[1:1]      | passed | 0.73691 seconds |
 ./spec/subscribe_spec.rb[1:1]              | passed | 1.09 seconds    |
