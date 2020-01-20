@@ -9,8 +9,8 @@ example_id                                 | status | run_time        |
 ./spec/lookup_seller_spec.rb[1:1]          | passed | 0.31804 seconds |
 ./spec/naverpay_item_xml_spec.rb[1:1]      | passed | 0.25967 seconds |
 ./spec/receipt_spec.rb[1:1]                | passed | 0.17095 seconds |
-./spec/request_subscribe_rest_spec.rb[1:1] | passed | 1.81 seconds    |
-./spec/seller_join_spec.rb[1:1]            | passed | 0.5625 seconds  |
+./spec/request_subscribe_rest_spec.rb[1:1] | passed | 0.2169 seconds  |
+./spec/seller_join_spec.rb[1:1]            | passed | 0.24642 seconds |
 ./spec/sms_spec.rb[1:1]                    | passed | 0.27484 seconds |
 ./spec/subscribe_billing_key_spec.rb[1:1]  | passed | 0.75694 seconds |
 ./spec/subscribe_reserve_spec.rb[1:1]      | passed | 0.73691 seconds |

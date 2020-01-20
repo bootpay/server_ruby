@@ -22,6 +22,17 @@ module Bootpay
           )
         end
 
+        def request_payment(data)
+          request(
+            :post,
+            [api_url, 'request', 'payment.json'].join('/'),
+            data,
+            {
+              Authorization: @token
+            }
+          )
+        end
+
         def remote_form(remote_form, sms_payload = nil)
           raise 'application_id 값이 비어 있습니다.' if @application_id.blank?
           raise 'remote_form 값이 비어 있습니다.' if remote_form.blank?
