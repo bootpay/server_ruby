@@ -1,17 +1,19 @@
-example_id                                 | status | run_time        |
------------------------------------------- | ------ | --------------- |
-./spec/access_token_spec.rb[1:1]           | failed | 0.19021 seconds |
-./spec/cancel_spec.rb[1:1]                 | passed | 0.38816 seconds |
-./spec/certificate_spec.rb[1:1]            | failed | 0.21742 seconds |
-./spec/confirm_spec.rb[1:1]                | passed | 0.18364 seconds |
-./spec/get_samsung_chatbotpay_spec.rb[1:1] | passed | 1.39 seconds    |
-./spec/lms_spec.rb[1:1]                    | passed | 0.99263 seconds |
-./spec/lookup_seller_spec.rb[1:1]          | passed | 0.31804 seconds |
-./spec/naverpay_item_xml_spec.rb[1:1]      | passed | 0.25967 seconds |
-./spec/receipt_spec.rb[1:1]                | passed | 0.17095 seconds |
-./spec/request_subscribe_rest_spec.rb[1:1] | passed | 0.21543 seconds |
-./spec/seller_join_spec.rb[1:1]            | passed | 0.24642 seconds |
-./spec/sms_spec.rb[1:1]                    | passed | 0.27484 seconds |
-./spec/subscribe_billing_key_spec.rb[1:1]  | passed | 0.75694 seconds |
-./spec/subscribe_reserve_spec.rb[1:1]      | passed | 0.73691 seconds |
-./spec/subscribe_spec.rb[1:1]              | passed | 1.09 seconds    |
+example_id                                        | status | run_time        |
+------------------------------------------------- | ------ | --------------- |
+./spec/access_token_spec.rb[1:1]                  | failed | 0.19021 seconds |
+./spec/cancel_spec.rb[1:1]                        | passed | 2.04 seconds    |
+./spec/certificate_spec.rb[1:1]                   | passed | 0.18377 seconds |
+./spec/confirm_spec.rb[1:1]                       | passed | 0.18364 seconds |
+./spec/get_samsung_chatbotpay_spec.rb[1:1]        | passed | 1.39 seconds    |
+./spec/get_user_token_spec.rb[1:1]                | passed | 0.30302 seconds |
+./spec/lms_spec.rb[1:1]                           | passed | 0.99263 seconds |
+./spec/lookup_seller_spec.rb[1:1]                 | passed | 0.31804 seconds |
+./spec/naverpay_item_xml_spec.rb[1:1]             | passed | 0.25967 seconds |
+./spec/receipt_spec.rb[1:1]                       | passed | 1.08 seconds    |
+./spec/request_subscribe_rest_spec.rb[1:1]        | passed | 1.65 seconds    |
+./spec/seller_join_spec.rb[1:1]                   | passed | 0.24642 seconds |
+./spec/sms_spec.rb[1:1]                           | passed | 0.27484 seconds |
+./spec/subscribe_billing_key_destroy_spec.rb[1:1] | passed | 0.4359 seconds  |
+./spec/subscribe_billing_key_spec.rb[1:1]         | passed | 1.34 seconds    |
+./spec/subscribe_reserve_spec.rb[1:1]             | passed | 0.73691 seconds |
+./spec/subscribe_spec.rb[1:1]                     | passed | 1.09 seconds    |

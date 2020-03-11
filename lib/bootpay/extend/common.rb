@@ -4,7 +4,7 @@ module Bootpay
       extend ActiveSupport::Concern
 
       included do
-        def cancel(receipt_id, price = nil, tax_free = nil, name = '', reason = '')
+        def cancel(receipt_id, price = nil, tax_free = nil, name = '', reason = '', refund = {})
           raise 'token 값이 비어 있습니다.' if @token.blank?
           request(
             :post,
@@ -14,7 +14,8 @@ module Bootpay
               price:      price,
               tax_free:   tax_free,
               name:       name.presence || '사용자',
-              reason:     reason.presence || '사용자취소'
+              reason:     reason.presence || '사용자취소',
+              refund:     refund
             }.compact,
             {
               Authorization: @token

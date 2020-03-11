@@ -20,6 +20,17 @@ module Bootpay
           @token = result[:data][:token] if result[:status] == 200
           result
         end
+
+        def get_user_token(data)
+          request(
+            :post,
+            [api_url, 'request', 'user', 'token.json'].join('/'),
+            data,
+            {
+              Authorization: @token
+            }
+          )
+        end
       end
     end
   end
