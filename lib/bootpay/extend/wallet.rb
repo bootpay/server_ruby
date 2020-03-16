@@ -13,6 +13,7 @@ module Bootpay
           request(
             :post,
             [api_url, 'subscribe', 'wallet', 'card.json'].join('/'),
+            data,
             {
               Authorization: @token
             }
