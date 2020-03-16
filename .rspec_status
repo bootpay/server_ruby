@@ -1,7 +1,7 @@
 example_id                                        | status | run_time        |
 ------------------------------------------------- | ------ | --------------- |
 ./spec/access_token_spec.rb[1:1]                  | failed | 0.19021 seconds |
-./spec/cancel_spec.rb[1:1]                        | passed | 2.04 seconds    |
+./spec/cancel_spec.rb[1:1]                        | passed | 1.39 seconds    |
 ./spec/certificate_spec.rb[1:1]                   | passed | 0.18377 seconds |
 ./spec/confirm_spec.rb[1:1]                       | passed | 0.18364 seconds |
 ./spec/get_samsung_chatbotpay_spec.rb[1:1]        | passed | 1.39 seconds    |
