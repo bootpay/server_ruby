@@ -14,6 +14,7 @@ module Bootpay
     include Bootpay::Extend::Samsung
     include Bootpay::Extend::Token
     include Bootpay::Extend::Verification
+    include Bootpay::Extend::Wallet
 
     URL = {
       development: 'https://dev-api.bootpay.co.kr',
