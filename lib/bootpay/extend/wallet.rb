@@ -19,6 +19,20 @@ module Bootpay
             }
           )
         end
+
+        def easy_card_confirm_ready(data)
+          raise ArgumentError, 'user_token 정보를 입력해주세요.' if data[:user_token].blank?
+          raise ArgumentError, 'wallet_id를 입력해주세요.' if data[:wallet_id].blank?
+          raise ArgumentError, 'receipt_id를 입력해주세요.' if data[:receipt_id].blank?
+          request(
+            :post,
+            [api_url, 'easy', 'card', 'confirm_ready.json'].join('/'),
+            data,
+            {
+              Authorization: @token
+            }
+          )
+        end
       end
     end
   end
