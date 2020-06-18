@@ -8,8 +8,10 @@ module Bootpay
 
     include Bootpay::Extend::Billing
     include Bootpay::Extend::Common
+    include Bootpay::Extend::Escrow
     include Bootpay::Extend::Message
     include Bootpay::Extend::Naverpay
+    include Bootpay::Extend::PaymentResource
     include Bootpay::Extend::Reseller
     include Bootpay::Extend::Samsung
     include Bootpay::Extend::Token
