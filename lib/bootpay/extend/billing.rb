@@ -76,6 +76,23 @@ module Bootpay
             }
           )
         end
+
+        def continue_subscribe_on_rest(data)
+          raise 'receipt_id를 입력해주세요.' if data[:receipt_id].blank?
+          raise 'card_no를 입력해주세요.' if data[:card_no].blank?
+          raise 'card_pw를 입력해주세요.' if data[:card_pw].blank?
+          raise 'expire_year를 입력해주세요.' if data[:expire_year].blank?
+          raise 'expire_month를 입력해주세요.' if data[:expire_month].blank?
+          raise 'identify_number를 입력해주세요.' if data[:identify_number].blank?
+          request(
+            :put,
+            [api_url, 'request', 'card_rebill', "#{data[:receipt_id]}.json"].join('/'),
+            data,
+            {
+              Authorization: @token
+            }
+          )
+        end
       end
     end
   end
