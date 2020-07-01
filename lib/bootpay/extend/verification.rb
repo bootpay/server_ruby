@@ -41,6 +41,17 @@ module Bootpay
             }
           )
         end
+
+        def subscribe_verify(receipt_id)
+          request(
+            :get,
+            [api_url, 'subscribe', 'billing', receipt_id].join('/'),
+            {},
+            {
+              Authorization: @token
+            }
+          )
+        end
       end
     end
   end
