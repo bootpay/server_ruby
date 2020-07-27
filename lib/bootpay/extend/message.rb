@@ -10,11 +10,11 @@ module Bootpay
             [api_url, 'push', 'sms.json'].join('/'),
             {
               data: {
-                sp:   send_number,
-                rps:  receive_numbers,
-                msg:  message,
-                m_id: extra[:m_id],
-                o_id: extra[:o_id]
+                send_number:     send_number,
+                receive_numbers: receive_numbers,
+                message:         message,
+                m_id:            extra[:m_id],
+                o_id:            extra[:o_id]
               }
             },
             {
@@ -30,12 +30,12 @@ module Bootpay
             [api_url, 'push', 'lms.json'].join('/'),
             {
               data: {
-                sp:   send_number,
-                rps:  receive_numbers,
-                msg:  message,
-                sj:   subject,
-                m_id: extra[:m_id],
-                o_id: extra[:o_id]
+                send_number:     send_number,
+                receive_numbers: receive_numbers,
+                message:         message,
+                subject:         subject,
+                m_id:            extra[:m_id],
+                o_id:            extra[:o_id]
               }
             },
             {
