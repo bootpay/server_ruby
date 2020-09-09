@@ -14,24 +14,16 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bootpay'
+gem 'bootpay-rest-client', git: 'git@github.com:bootpay/server_ruby.git'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install bootpay
 
 ## 샘플코드 
 
 ```ruby 
-bootpay = Bootpay::ServerApi.new 'application_id_value_1234', '593f8febe13f332431a8ddaw'
-res = bootpay.confirm '593f8febe13f332431a8ddae'
-puts res.body
+bootpay = Bootpay::ServerApi.new('application_id_value_1234', '593f8febe13f332431a8ddaw')
+response = bootpay.verify('593f8febe13f332431a8ddae')
+puts response
 ``` 
 
 
-### 더 자세한 정보는 [Docs](https://docs.bootpay.co.kr/api/validate?languageCurrentIndex=4)를 참조해주세요. 
+### 더 자세한 정보는 [Docs](https://docs.bootpay.co.kr/rest/verify)를 참조해주세요. 

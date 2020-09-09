@@ -7,12 +7,12 @@ example_id                                        | status | run_time        |
 ./spec/before_publish_spec.rb[1:4]                | passed | 0.84887 seconds |
 ./spec/before_publish_spec.rb[1:5]                | passed | 0.54438 seconds |
 ./spec/before_publish_spec.rb[1:6]                | passed | 0.29391 seconds |
-./spec/before_update_in_stage_spec.rb[1:1]        | passed | 3.77 seconds    |
-./spec/before_update_in_stage_spec.rb[1:2]        | passed | 1.08 seconds    |
-./spec/before_update_in_stage_spec.rb[1:3]        | passed | 0.20444 seconds |
-./spec/before_update_in_stage_spec.rb[1:4]        | passed | 0.9131 seconds  |
-./spec/before_update_in_stage_spec.rb[1:5]        | passed | 0.42901 seconds |
-./spec/before_update_in_stage_spec.rb[1:6]        | passed | 0.27078 seconds |
+./spec/before_update_in_stage_spec.rb[1:1]        | passed | 1.92 seconds    |
+./spec/before_update_in_stage_spec.rb[1:2]        | passed | 0.81672 seconds |
+./spec/before_update_in_stage_spec.rb[1:3]        | passed | 0.22887 seconds |
+./spec/before_update_in_stage_spec.rb[1:4]        | passed | 0.92454 seconds |
+./spec/before_update_in_stage_spec.rb[1:5]        | passed | 0.31785 seconds |
+./spec/before_update_in_stage_spec.rb[1:6]        | passed | 0.25792 seconds |
 ./spec/cancel_spec.rb[1:1]                        | passed | 0.45227 seconds |
 ./spec/certificate_spec.rb[1:1]                   | passed | 0.18377 seconds |
 ./spec/confirm_spec.rb[1:1]                       | passed | 0.18364 seconds |
@@ -21,7 +21,7 @@ example_id                                        | status | run_time        |
 ./spec/lms_spec.rb[1:1]                           | passed | 0.34504 seconds |
 ./spec/lookup_seller_spec.rb[1:1]                 | passed | 0.31804 seconds |
 ./spec/naverpay_item_xml_spec.rb[1:1]             | passed | 0.25967 seconds |
-./spec/receipt_spec.rb[1:1]                       | passed | 0.47709 seconds |
+./spec/receipt_spec.rb[1:1]                       | passed | 0.50758 seconds |
 ./spec/request_payment_rest_spec.rb[1:1]          | passed | 0.56445 seconds |
 ./spec/request_subscribe_rest_spec.rb[1:1]        | passed | 1.93 seconds    |
 ./spec/sellef_pg_resource_spec.rb[1:1]            | passed | 0.20737 seconds |
