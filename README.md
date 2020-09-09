@@ -15,6 +15,8 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'bootpay-rest-client', git: 'git@github.com:bootpay/server_ruby.git'
+# or
+gem 'bootpay-rest-client', git: 'https://github.com/bootpay/server_ruby.git'
 ```
 
 ## 샘플코드 
