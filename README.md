@@ -1,3 +1,7 @@
+# 주의사항!! 아직 테스트가 진행중인 버전입니다
+
+# main 브런치는 httprb 버전입니다
+* 기존 Rest-Client Gem -> httprb 버전으로 변경한 버전입니다.
 
 ## PG Analytics - 결제데이터 분석서비스
 * 기존 PG 사를 이용 중이신 사업자도 별도의 계약없이 부트페이를 통해 결제 연동과 통계를 무료로 이용하실 수 있습니다.
@@ -14,9 +18,9 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bootpay-rest-client', git: 'git@github.com:bootpay/server_ruby.git'
+gem 'bootpay-rest-client', git: 'git@github.com:bootpay/server_ruby.git', branch: 'main'
 # or
-gem 'bootpay-rest-client', git: 'https://github.com/bootpay/server_ruby.git'
+gem 'bootpay-rest-client', git: 'https://github.com/bootpay/server_ruby.git', branch: 'main'
 ```
 
 ## 샘플코드 
