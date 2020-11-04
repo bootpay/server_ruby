@@ -12,7 +12,7 @@ module Bootpay
           raise '간편 결제를 등록하려는 카드 소유주 혹은 사업자 번호 정보를 입력해주세요.' if data[:identify].blank?
           request(
             :post,
-            [api_url, 'subscribe', 'wallet', 'card.json'].join('/'),
+            get_api_url('subscribe', 'wallet', 'card'),
             data,
             {
               Authorization: @token
@@ -26,7 +26,7 @@ module Bootpay
           raise ArgumentError, 'receipt_id를 입력해주세요.' if data[:receipt_id].blank?
           request(
             :post,
-            [api_url, 'easy', 'card', 'confirm_ready.json'].join('/'),
+            get_api_url('easy/card/confirm_ready'),
             data,
             {
               Authorization: @token

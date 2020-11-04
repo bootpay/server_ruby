@@ -11,7 +11,7 @@ module Bootpay
           raise '결제하고자 하는 pg alias를 입력해주세요.' if data[:pg].blank?
           request(
             :post,
-            [api_url, 'request', 'card_rebill.json'].join('/'),
+            get_api_url('request/card_rebill'),
             data,
             {
               Authorization: @token
@@ -23,7 +23,7 @@ module Bootpay
           raise 'token 값이 비어 있습니다.' if @token.blank?
           request(
             :delete,
-            [api_url, 'subscribe', 'billing', "#{billing_key}.json"].join('/'),
+            get_api_url("subscribe/billing/#{billing_key}"),
             {},
             {
               Authorization: @token
@@ -39,7 +39,7 @@ module Bootpay
           raise 'order_id 주문번호를 설정해주세요.' if data[:order_id].blank?
           request(
             :post,
-            [api_url, 'subscribe', 'billing.json'].join('/'),
+            get_api_url('subscribe/billing'),
             data,
             {
               Authorization: @token
@@ -57,7 +57,7 @@ module Bootpay
           data[:scheduler_type] = data[:scheduler_type].presence || 'oneshot'
           request(
             :post,
-            [api_url, 'subscribe', 'billing', 'reserve.json'].join('/'),
+            get_api_url('subscribe/billing/reserve'),
             data,
             {
               Authorization: @token
@@ -69,7 +69,7 @@ module Bootpay
           raise 'reserve_id를 입력해주세요.' if reserve_id.blank?
           request(
             :delete,
-            [api_url, 'subscribe', 'billing', 'reserve', "#{reserve_id}.json"].join('/'),
+            get_api_url("subscribe/billing/reserve/#{reserve_id}"),
             {},
             {
               Authorization: @token
@@ -86,7 +86,7 @@ module Bootpay
           raise 'identify_number를 입력해주세요.' if data[:identify_number].blank?
           request(
             :put,
-            [api_url, 'request', 'card_rebill', "#{data[:receipt_id]}.json"].join('/'),
+            get_api_url("request/card_rebill/#{data[:receipt_id]}"),
             data,
             {
               Authorization: @token

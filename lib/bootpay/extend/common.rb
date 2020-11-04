@@ -8,7 +8,7 @@ module Bootpay
           raise 'token 값이 비어 있습니다.' if @token.blank?
           request(
             :post,
-            [api_url, 'cancel.json'].join('/'),
+            get_api_url('cancel'),
             {
               cancel_id:  cancel_id,
               receipt_id: receipt_id,
@@ -27,7 +27,7 @@ module Bootpay
         def request_payment(data)
           request(
             :post,
-            [api_url, 'request', 'payment.json'].join('/'),
+            get_api_url('request/payment'),
             data,
             {
               Authorization: @token
@@ -40,17 +40,39 @@ module Bootpay
           raise 'remote_form 값이 비어 있습니다.' if remote_form.blank?
           request(
             :post,
-            [api_url, 'app', 'rest', 'remote_form'].join('/'),
+            get_api_url('app/rest/remote_form'),
             {
               application_id: @application_id,
               remote_form:    remote_form,
               sms_payload:    sms_payload
-            },
-          # {
-          #     content_type:  :json,
-          #     Authorization: @token
-          # }
+            }
           )
+        end
+
+        def request(method, url, data = {}, headers = {})
+          begin
+            response = HTTP.headers(headers.merge!(
+              accept: 'application/json'
+            )).send(method.to_sym, url, json: data)
+          rescue Exception => e
+            { status:  500,
+              code:    -101,
+              message: "http rb client connection failed. ERROR: #{e.message}" }
+          else
+            JSON.parse(response.body.to_s, symbolize_names: true) rescue {
+              status:  500,
+              code:    -100,
+              message: "json parse failed [ raw_data: #{response.body.to_s} ]"
+            }
+          end
+        end
+
+        def get_api_url(uri)
+          [api_url, uri].join('/')
+        end
+
+        def api_url
+          Bootpay::ServerApi::URL[@mode.to_sym]
         end
       end
     end

@@ -11,7 +11,7 @@ module Bootpay
         def get_access_token
           result = request(
             :post,
-            [api_url, 'request', 'token.json'].join('/'),
+            get_api_url('request/token'),
             {
               application_id: @application_id,
               private_key:    @private_key
@@ -24,7 +24,7 @@ module Bootpay
         def get_user_token(data)
           request(
             :post,
-            [api_url, 'request', 'user', 'token.json'].join('/'),
+            get_api_url('request/user/token'),
             data,
             {
               Authorization: @token

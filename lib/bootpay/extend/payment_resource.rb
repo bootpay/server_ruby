@@ -11,10 +11,9 @@ module Bootpay
           # @return [Hash]
           request(
             :post,
-            [api_url, 'project', 'payment.json'].join('/'),
-            data.to_json,
+            get_api_url('project/payment'),
+            data,
             {
-              content_type:  :json,
               Authorization: @token
             }
           )

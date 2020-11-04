@@ -7,12 +7,11 @@ module Bootpay
         def naverpay_item_response(data)
           request(
             :post,
-            [api_url, 'npay', 'product.json'].join("/"),
+            get_api_url('npay/product'),
             {
               data: data
             },
             {
-              content_type:  :json,
               Authorization: @token
             }
           )

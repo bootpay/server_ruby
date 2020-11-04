@@ -7,7 +7,7 @@ module Bootpay
         def get_samsung_access_token
           result = request(
             :post,
-            [api_url, 'samsung', 'request', 'token.json'].join('/'),
+            get_api_url('samsung/request/token'),
             {
               application_id: @application_id,
               private_key:    @private_key
@@ -20,10 +20,9 @@ module Bootpay
         def request_samsung_chatbotpay(request)
           request(
             :post,
-            [api_url, 'samsung', 'request', 'chatbotpay.json'].join('/'),
+            get_api_url('samsung/request/chatbotpay'),
             request,
             {
-              content_type:  :json,
               Authorization: @token
             }
           )
@@ -32,7 +31,7 @@ module Bootpay
         def samsung_cancel(receipt_id, price = nil, tax_free = nil, name = '', reason = '')
           request(
             :post,
-            [api_url, 'samsung', 'cancel.json'].join('/'),
+            get_api_url('samsung/cancel'),
             {
               receipt_id: receipt_id,
               price:      price,

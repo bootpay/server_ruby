@@ -1,4 +1,4 @@
-require 'rest-client'
+require 'http'
 require 'active_support/all'
 require 'rack'
 Gem.find_files("bootpay/extend/*.rb").each { |path| require path }

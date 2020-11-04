@@ -9,7 +9,7 @@ module Bootpay
           raise 'token 값이 비어 있습니다.' if @token.blank?
           request(
             :get,
-            [api_url, 'receipt', "#{receipt_id}.json"].join('/'),
+            get_api_url("receipt/#{receipt_id}"),
             {},
             {
               Authorization: @token
@@ -21,7 +21,7 @@ module Bootpay
           raise 'receipt_id를 입력해주세요.' if receipt_id.blank?
           request(
             :post,
-            [api_url, 'submit.json'].join("/"),
+            get_api_url('submit'),
             {
               receipt_id: receipt_id
             },
@@ -34,7 +34,7 @@ module Bootpay
         def certificate(receipt_id)
           request(
             :get,
-            [api_url, 'certificate', receipt_id].join('/'),
+            get_api_url("certificate/#{receipt_id}"),
             {},
             {
               Authorization: @token
@@ -45,7 +45,7 @@ module Bootpay
         def subscribe_verify(receipt_id)
           request(
             :get,
-            [api_url, 'subscribe', 'billing', receipt_id].join('/'),
+            get_api_url("subscribe/billing/#{receipt_id}"),
             {},
             {
               Authorization: @token

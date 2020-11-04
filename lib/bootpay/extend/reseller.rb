@@ -11,10 +11,9 @@ module Bootpay
         def lookup_seller(email)
           request(
             :get,
-            [api_url, 'seller', 'lookup.json'].join('/'),
+            get_api_url('seller/lookup'),
             {},
             {
-              content_type:  :json,
               Authorization: @token,
               params:        {
                 email: email
@@ -30,10 +29,9 @@ module Bootpay
         def seller_join(data)
           request(
             :post,
-            [api_url, 'seller', 'join.json'].join('/'),
-            data.to_json,
+            get_api_url('seller/join'),
+            data,
             {
-              content_type:  :json,
               Authorization: @token
             }
           )
