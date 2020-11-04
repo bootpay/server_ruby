@@ -1,3 +1,6 @@
+# 곧 저장소가 변경됩니다
+* Rest-Client -> httprb 를 사용하도록 변경이 됩니다.
+* [https://github.com/bootpay/server_ruby/tree/main](https://github.com/bootpay/server_ruby/tree/main)로 메인저장소가 변경됩니다.
 
 ## PG Analytics - 결제데이터 분석서비스
 * 기존 PG 사를 이용 중이신 사업자도 별도의 계약없이 부트페이를 통해 결제 연동과 통계를 무료로 이용하실 수 있습니다.
